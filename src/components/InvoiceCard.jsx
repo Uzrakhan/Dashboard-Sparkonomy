@@ -48,24 +48,24 @@ const InvoiceCard = ({ clientName, amount, date, initialStatus }) => {
   ]
 
   return (
-    <div className='bg-white rounded-2xl shadow-sm p-4 flex justify-between items-center m-4 border-2'>
+    <div className='bg-white rounded-xl shadow-sm p-1 flex justify-between items-center m-4 border-2'>
       <div>
-        <h4 className='text-gray-800 font-semibold'>
+        <h4 className='text-gray-600 font-semibold text-sm'>
           {clientName}
         </h4>
-        <p className='text-gray-500 text-sm mt-1'>
+        <p className='text-gray-500 text-xs mt-1'>
           {amount}, Due: {date}
         </p>
       </div>
 
-      <div className={`rounded-full px-4 py-1 text-xs font-semibold ${badgeColorClass} ${textColorClass}`}>
+      <div className={`rounded-full px-2 py-1 text-xs font-semibold ml-4 ${badgeColorClass} ${textColorClass}`}>
         <select 
           value={status}
           onChange={handleStatusChange}
           className={`bg-transparent outline-none border-none cursor-pointer ${textColorClass}`}
         >
           {statusOptions.map((option) => (
-            <option key={option} value={option}>
+            <option key={option} value={option} className='text-xs'>
               {option}
             </option>
           ))}

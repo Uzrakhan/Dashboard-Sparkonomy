@@ -14,10 +14,10 @@ const data = [
 const Chart = () => {
   return (
     <div className="bg-white rounded-2xl shadow-sm p-4 border-2">
-      <h3 className='text-lg font-semibold text-gray-800'>
+      <h3 className='text-lg font-semibold text-gray-600'>
         Income Trend
       </h3>
-      <p className='text-sm text-gray-500 mb-4'>
+      <p className='text-sm text-gray-700 mb-4'>
         Your monthly income and growth for the last 6 months.
       </p>
       

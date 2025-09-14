@@ -19,14 +19,14 @@ function App() {
         <InvoiceCreator />
         <TimePeriodSelector />
         <TotalEarnings />
-        <div className='flex space-y-4 items-center justify-between '>
+        <div className='flex space-y-4 items-center justify-between w-full mb-4'>
           <MetricCard title="Payment Awaited" value="₹25,000"/>
           <MetricCard title="Payment Overdue" value="₹25,000"/>
         </div>
         <Chart />
-        <div className='mt-6 flex flex-col justify-between items-stretch space-y-4'>
+        <div className='mt-8 flex flex-col justify-between items-stretch space-y-4'>
           <div>
-            <h2 className='text-xl font-semibold'>Your Invoices</h2>
+            <h2 className='text-xl font-semibold text-gray-600'>Your Invoices</h2>
             <InvoiceCard clientName="Uzra Khan" amount="₹1,25,000"  date="2024-06-15" initialStatus="Unpaid" />
             <InvoiceCard clientName="Aaisha Khan" amount="₹1,25,000" date="2024-06-15" initialStatus="Disputed" />
             <InvoiceCard clientName="Haris Khan" amount="₹1,25,000" date="2024-06-15" initialStatus="Paid" />

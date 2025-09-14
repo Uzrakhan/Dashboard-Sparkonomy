@@ -2,8 +2,8 @@ import React from 'react'
 
 const InvoiceCreator = () => {
   return (
-    <div className='bg-white rounded-2xl shadow-sm flex flex-col items-center p-'>
-        <div className='bg-gray-100 flex flex-col items-center p-7 w-full rounded-xl'>
+    <div className='bg-white rounded-2xl shadow-sm flex flex-col items-center justify-center p-6'>
+        <div className='bg-gray-100 flex flex-col items-center p-7 w-full rounded-2xl'>
             <div className='bg-purple-100 h-16 w-16 rounded-full flex items-center justify-center'>
                 <svg
                     xmlns="http://www.w3.org/2000/svg"

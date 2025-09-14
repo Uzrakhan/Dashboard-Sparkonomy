@@ -48,12 +48,12 @@ const InvoiceCard = ({ clientName, amount, date, initialStatus }) => {
   ]
 
   return (
-    <div className='bg-white rounded-xl shadow-sm p-1 flex justify-between items-center m-4 border-2'>
-      <div>
-        <h4 className='text-gray-600 font-semibold text-sm'>
+    <div className='bg-white rounded-xl shadow-sm p-1 lg:p-6 flex justify-between items-center m-4 border-2'>
+      <div className='flex flex-col'>
+        <h4 className='text-gray-600 font-semibold text-sm lg:text-lg'>
           {clientName}
         </h4>
-        <p className='text-gray-500 text-xs mt-1'>
+        <p className='text-gray-500 text-xs mt-1 lg:text-base'>
           {amount}, Due: {date}
         </p>
       </div>

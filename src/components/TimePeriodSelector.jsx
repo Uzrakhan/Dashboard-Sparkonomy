@@ -44,11 +44,11 @@ const TimePeriodSelector = () => {
   return (
     <div className="bg-white rounded-2xl shadow-sm p-2 relative border-2">
       <div className="flex justify-between items-center mb-2">
-        <p className="font-semibold text-xs text-gray-500">Time Period</p>
-        <p className="text-xs text-gray-500">{formatDateRange()}</p>
+        <p className="font-semibold text-xs text-gray-500 lg:text-xl">Time Period</p>
+        <p className="text-xs text-gray-500 lg:text-lg">{formatDateRange()}</p>
       </div>
 
-      <div className="flex flex-wrap text-xs mb-1">
+      <div className="flex flex-wrap space-x-2 text-xs mb-1">
         {periods.map((period) => (
           <button
             key={period.value}

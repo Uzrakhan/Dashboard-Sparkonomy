@@ -23,13 +23,13 @@ const TimePeriodSelector = () => {
   };
 
   const getButtonClass = (value) => {
-    const baseClasses = "m-3 rounded-full text-sm font-semibold transition-colors duration-200";
+    const baseClasses = "mx-1 rounded-full text-xs font-normal transition-colors duration-200 px-1 mb-2";
     if (activePeriod === value) {
       // Styling for active button as seen in the screenshot
-      return `${baseClasses} bg-purple-200 text-purple-700 border-2 p-1`;
+      return `${baseClasses} bg-purple-200 text-purple-700 border-2`;
     }
     // Styling for inactive buttons as seen in the screenshot
-    return `${baseClasses} border-2 text-gray-700 hover:bg-gray-300 p-1`;
+    return `${baseClasses} border-2 text-gray-700 hover:bg-gray-300`;
   };
 
   const formatDateRange = () => {
@@ -44,11 +44,11 @@ const TimePeriodSelector = () => {
   return (
     <div className="bg-white rounded-2xl shadow-sm p-2 relative border-2">
       <div className="flex justify-between items-center mb-2">
-        <p className="font-semibold text-gray-500">Time Period</p>
-        <p className="text-sm text-gray-500">{formatDateRange()}</p>
+        <p className="font-semibold text-xs text-gray-500">Time Period</p>
+        <p className="text-xs text-gray-500">{formatDateRange()}</p>
       </div>
 
-      <div className="flex text-xs">
+      <div className="flex flex-wrap text-xs mb-1">
         {periods.map((period) => (
           <button
             key={period.value}

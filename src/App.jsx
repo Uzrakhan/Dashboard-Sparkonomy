@@ -9,22 +9,23 @@ import TotalEarnings from './components/TotalEarnings'
 import MetricCard from './components/MetricCard'
 import Chart from './components/Chart'
 import InvoiceCard from './components/InvoiceCard'
+import Footer from './components/Footer'
 
 function App() {
 
   return (
-    <div className='bg-white min-h-screen p-4'>
+    <div className='bg-white min-h-screen p-2.5 space-y-4'>
       <Header />
-      <div className='mt-5 flex flex-col space-y-4'>
+      <div className='mt-5 flex flex-col space-y-4 flex-grow'>
         <InvoiceCreator />
         <TimePeriodSelector />
         <TotalEarnings />
-        <div className='flex space-y-4 items-center justify-between w-full mb-4'>
+        <div className='flex items-center justify-between w-full mb-4'>
           <MetricCard title="Payment Awaited" value="₹25,000"/>
           <MetricCard title="Payment Overdue" value="₹25,000"/>
         </div>
         <Chart />
-        <div className='mt-8 flex flex-col justify-between items-stretch space-y-4'>
+        <div className='mt-12 flex flex-col justify-between items-stretch space-y-4'>
           <div>
             <h2 className='text-xl font-semibold text-gray-600'>Your Invoices</h2>
             <InvoiceCard clientName="Uzra Khan" amount="₹1,25,000"  date="2024-06-15" initialStatus="Unpaid" />
@@ -37,6 +38,7 @@ function App() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   )
 }

@@ -14,11 +14,11 @@ import Footer from './components/Footer'
 function App() {
 
   return (
-    <div className='min-h-screen p-4 lg:p-8 flex flex-col'>
+    <div className='bg-white min-h-screen'>
       <Header />
       
       {/* Main content area with a two-column layout for laptops */}
-      <div className="flex-grow flex flex-col lg:grid lg:grid-cols-2 lg:gap-6 mt-6 lg:mt-10">
+      <div className="flex flex-col flex-grow  lg:grid lg:grid-cols-2 lg:gap-6 mt-6 lg:mt-10">
         {/* First Column (Left): Large Invoice Creator */}
         <div className="lg:col-span-1">
           <InvoiceCreator />
@@ -29,8 +29,8 @@ function App() {
           <TimePeriodSelector />
           <TotalEarnings />
           <div className="flex space-x-4">
-            <MetricCard title="Payment Awaited" value="₹25,000" />
-            <MetricCard title="Payment Overdue" value="₹25,000" />
+            <MetricCard title="Payment Awaited" value="$25,000" />
+            <MetricCard title="Payment Overdue" value="$25,000" />
           </div>
         </div>
 
@@ -38,9 +38,9 @@ function App() {
         <div className="lg:col-span-2 flex flex-col space-y-4 mt-4">
           <Chart />
           <div className='bg-white rounded-2xl shadow-sm p-4'>
-            <h2 className='text-xl font-semibold text-gray-600 mb-4'>Your Invoices</h2>
+            <h2 className='text-lg font-semibold text-[#999999] mb-4'>Your Invoices</h2>
             <div className="flex flex-col space-y-4">
-              <InvoiceCard clientName="Uzra Khan" amount="₹1,25,000" date="2024-06-15" initialStatus="Unpaid" />
+              <InvoiceCard clientName="Uzra Khan" amount="₹1,25,000" date="2024-06-15" initialStatus="Update Status" />
               <InvoiceCard clientName="Aaisha Khan" amount="₹1,25,000" date="2024-06-15" initialStatus="Disputed" />
               <InvoiceCard clientName="Haris Khan" amount="₹1,25,000" date="2024-06-15" initialStatus="Paid" />
               <InvoiceCard clientName="Nizam Khan" amount="₹1,25,000" date="2024-06-15" initialStatus="Partially Paid" />

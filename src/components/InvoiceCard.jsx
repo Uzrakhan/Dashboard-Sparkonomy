@@ -11,6 +11,10 @@ const InvoiceCard = ({ clientName, amount, date, initialStatus }) => {
       badgeColorClass = 'bg-green-100';
       textColorClass = 'text-green-600';
       break;
+    case 'Update Status':
+      badgeColorClass = 'bg-[#8134af]';
+      textColorClass = 'text-white';
+      break;
     case 'Overdue':
       badgeColorClass = 'bg-red-100';
       textColorClass = 'text-red-600';
@@ -39,6 +43,7 @@ const InvoiceCard = ({ clientName, amount, date, initialStatus }) => {
   };
 
   const statusOptions = [
+    'Update Status',
     'Unpaid',
     'Paid',
     'Overdue',
@@ -48,17 +53,17 @@ const InvoiceCard = ({ clientName, amount, date, initialStatus }) => {
   ]
 
   return (
-    <div className='bg-white rounded-xl shadow-sm p-1 lg:p-6 flex justify-between items-center m-4 border-2'>
-      <div className='flex flex-col'>
-        <h4 className='text-gray-600 font-semibold text-sm lg:text-lg'>
+    <div className='bg-white rounded-xl shadow-sm px-2 lg:p-6 flex justify-between items-center m-0.5 border-2'>
+      <div className='flex flex-col border-[#f2f2f2] p-0.5 py-2 border-1'>
+        <h4 className='text-[#6b7280] font-semibold text-xs lg:text-lg'>
           {clientName}
         </h4>
-        <p className='text-gray-500 text-xs mt-1 lg:text-base'>
+        <p className='text-[#999999] text-xs mt-1 lg:text-base'>
           {amount}, Due: {date}
         </p>
       </div>
 
-      <div className={`rounded-full px-2 py-1 text-xs font-semibold ml-4 ${badgeColorClass} ${textColorClass}`}>
+      <div className={`rounded-full px-1 py-1 text-xs font-semibold ${badgeColorClass} ${textColorClass}`}>
         <select 
           value={status}
           onChange={handleStatusChange}

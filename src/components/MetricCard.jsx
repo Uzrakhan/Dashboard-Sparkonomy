@@ -6,7 +6,7 @@ const MetricCard = ({ title, value }) => {
         <h3 className='text-gray-500 text-sm font-semibold lg:text-lg'>
             {title}
         </h3>
-        <h4 className='text-xl font-bold mt-1 text-purple-600 lg:text-2xl'>
+        <h4 className='text-xl font-bold mt-1 text-[#8134AF] lg:text-2xl'>
             {value}
         </h4>
     </div>

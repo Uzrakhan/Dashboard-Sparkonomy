@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Line, ReferenceLine
+  ComposedChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Line, ReferenceLine
 } from 'recharts';
 
 // Adjusted dummy data to include negative momGrowth and match visual scale
@@ -15,30 +15,30 @@ const data = [
 
 const IncomeChart = () => {
   return (
-    <div className="bg-white rounded-2xl shadow-sm p-2 border-2">
+    <div className="bg-white rounded-2xl shadow-sm p-2 border-2 w-full lg:mt-5">
       {/* Title and description for the chart */}
-      <h3 className="text-sm font-semibold text-gray-500">Income Trend</h3>
-      <p className="text-sm text-gray-500 mb-4">Your monthly income and growth for the last 6 months.</p>
+      <h3 className="text-sm font-semibold text-[#6b7280] lg:text-2xl lg:mx-2">Income Trend</h3>
+      <p className="text-sm font-normal text-[#6b7280] mb-4 lg:mx-2">Your monthly income and growth for the last 6 months.</p>
       
-      <div className="flex justify-center h-80">
+      <div className="flex justify-center h-64 lg:h-96">
         <ResponsiveContainer width="100%" height="100%">
-          <BarChart data={data} margin={{ top: 20, right: 30, left: 20, bottom: 5 }} >
+          <ComposedChart data={data} margin={{ top: 10, right: 15, left: 15, bottom: 15 }} >
             <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#e0e0e0" /> {/* Hide vertical grid, lighten horizontal */}
             
             {/* X-Axis for Months */}
-            <XAxis dataKey="name" axisLine={false} tickLine={false}  />
+            <XAxis dataKey="name" axisLine={false} tickLine={false} interval={0} style={{ fontSize: '0.75rem' }}  />
             
             {/* Left Y-Axis for Income */}
             <YAxis 
               yAxisId="left" 
               orientation="left" 
-              stroke="#8884d8" // Purple for consistency
+              stroke="#877b9e" // Purple for consistency
               domain={[0, 8000]} // From $0k to $8k
               tickCount={5} // To get 0, 2k, 4k, 6k, 8k
               tickFormatter={(value) => `$${value / 1000}k`} // Formats to $0k, $2k etc.
               axisLine={{ stroke: '#a78bfa', strokeWidth: 2 }}
               tickLine={false} // Remove the y-axis ticks
-              style={{ fontSize: '0.8rem', fill: '#4a5568' }} // Adjust font size/color
+              style={{ fontSize: '0.8rem', fill: '#877b9e' }} // Adjust font size/color
             />
             
             {/* Right Y-Axis for MoM Growth */}
@@ -51,7 +51,7 @@ const IncomeChart = () => {
               tickFormatter={(value) => `${value}%`} // Formats to -100%, -50% etc.
               axisLine={false} 
               tickLine={false} 
-              style={{ fontSize: '0.8rem', fill: '#4a5568' }} // Adjust font size/color
+              style={{ fontSize: '0.8rem', fill: '#877b9e' }} // Adjust font size/color
             />
 
             <ReferenceLine y={8000} yAxisId="left" stroke="#d1d5db" strokeDasharray="3 3" />
@@ -64,7 +64,7 @@ const IncomeChart = () => {
             <Tooltip cursor={{ fill: 'rgba(0,0,0,0.05)' }} /> {/* Light grey background for tooltip cursor */}
             
             {/* Bar for Income - set to the purple color */}
-            <Bar yAxisId="left" dataKey="income" fill="#a78bfa" barSize={40} radius={[5, 5, 0, 0]} /> {/* Tailwind's purple-400 or a similar shade, rounded tops */}
+            <Bar yAxisId="left" dataKey="income" fill="#a743e5" maxBarSize={25} radius={[5, 5, 0, 0]} /> {/* Tailwind's purple-400 or a similar shade, rounded tops */}
             
             {/* Line for MoM Growth - set to the maroon color */}
             <Line 
@@ -73,7 +73,7 @@ const IncomeChart = () => {
               stroke="#8b0000" // Dark maroon/brown color from screenshot
               strokeWidth={2}
               type="monotone" // Smooth curve
-              dot={false} // No dots on the line
+              dot={false} 
             />
 
             <YAxis 
@@ -86,7 +86,7 @@ const IncomeChart = () => {
               tickLine={false}
               style={{ fontSize: '0.8rem', fill: '#4a5568' }} 
             />
-          </BarChart>
+          </ComposedChart>
         </ResponsiveContainer>
       </div>
 

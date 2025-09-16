@@ -41,12 +41,16 @@ function App() {
             <h2 className='text-lg font-semibold text-[#999999] mb-4'>Your Invoices</h2>
             <div className="flex flex-col space-y-4">
               <InvoiceCard clientName="Uzra Khan" amount="₹1,25,000" date="2024-06-15" initialStatus="Update Status" />
-              <InvoiceCard clientName="Aaisha Khan" amount="₹1,25,000" date="2024-06-15" initialStatus="Disputed" />
+              <InvoiceCard clientName="Aaisha Khan" amount="₹1,25,000" date="2024-06-15" initialStatus="Unpaid" />
+              <InvoiceCard clientName="Income Trend" amount="₹1,25,000" date="2024-06-15" initialStatus="Disputed" />
+              <InvoiceCard clientName="Income Trend" amount="₹1,25,000" date="2024-06-15" initialStatus="Paid" />
               <InvoiceCard clientName="Income Trend" amount="₹1,25,000" date="2024-06-15" initialStatus="Paid" />
               <InvoiceCard clientName="Income Trend" amount="₹1,25,000" date="2024-06-15" initialStatus="Partially Paid" />
+              <InvoiceCard clientName="Income Trend" amount="₹1,25,000" date="2024-06-15" initialStatus="Paid" />
               <InvoiceCard clientName="Income Trend" amount="₹1,25,000" date="2024-06-15" initialStatus="Overdue" />
               <InvoiceCard clientName="Income Trend" amount="₹1,25,000" date="2024-06-15" initialStatus="Awaited" />
               <InvoiceCard clientName="Income Trend" amount="₹1,25,000" date="2024-06-15" initialStatus="Draft" />
+              <InvoiceCard clientName="Income Trend" amount="₹1,25,000" date="2024-06-15" initialStatus="Paid" />
             </div>
           </div>
         </div>

@@ -42,11 +42,11 @@ function App() {
             <div className="flex flex-col space-y-4">
               <InvoiceCard clientName="Uzra Khan" amount="₹1,25,000" date="2024-06-15" initialStatus="Update Status" />
               <InvoiceCard clientName="Aaisha Khan" amount="₹1,25,000" date="2024-06-15" initialStatus="Disputed" />
-              <InvoiceCard clientName="Haris Khan" amount="₹1,25,000" date="2024-06-15" initialStatus="Paid" />
-              <InvoiceCard clientName="Nizam Khan" amount="₹1,25,000" date="2024-06-15" initialStatus="Partially Paid" />
-              <InvoiceCard clientName="Ameera Khan" amount="₹1,25,000" date="2024-06-15" initialStatus="Overdue" />
-              <InvoiceCard clientName="Affan Ahmed" amount="₹1,25,000" date="2024-06-15" initialStatus="Awaited" />
-              <InvoiceCard clientName="Azhar Ahmed" amount="₹1,25,000" date="2024-06-15" initialStatus="Draft" />
+              <InvoiceCard clientName="Income Trend" amount="₹1,25,000" date="2024-06-15" initialStatus="Paid" />
+              <InvoiceCard clientName="Income Trend" amount="₹1,25,000" date="2024-06-15" initialStatus="Partially Paid" />
+              <InvoiceCard clientName="Income Trend" amount="₹1,25,000" date="2024-06-15" initialStatus="Overdue" />
+              <InvoiceCard clientName="Income Trend" amount="₹1,25,000" date="2024-06-15" initialStatus="Awaited" />
+              <InvoiceCard clientName="Income Trend" amount="₹1,25,000" date="2024-06-15" initialStatus="Draft" />
             </div>
           </div>
         </div>

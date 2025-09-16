@@ -1,13 +1,10 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import Header from './components/Header'
 import InvoiceCreator from './components/InvoiceCreator'
 import TimePeriodSelector from './components/TimePeriodSelector'
 import TotalEarnings from './components/TotalEarnings'
 import MetricCard from './components/MetricCard'
-import Chart from './components/Chart'
+import IncomeChart from './components/IncomeChart'
 import InvoiceCard from './components/InvoiceCard'
 import Footer from './components/Footer'
 
@@ -36,7 +33,7 @@ function App() {
 
         {/* Chart and Invoices list, spanning the full width below the two columns */}
         <div className="lg:col-span-2 flex flex-col space-y-4 mt-4 px-4 lg:px-4">
-          <Chart />
+          <IncomeChart />
           <div className='bg-white rounded-2xl shadow-sm p-2'>
             <h2 className='text-lg font-semibold text-[#999999] mb-4'>Your Invoices</h2>
             <div className="flex flex-col space-y-4">

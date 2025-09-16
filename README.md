@@ -14,10 +14,10 @@ This project was developed as an assignment for **Sparkonomy**, a company dedica
 This dashboard features a dynamic layout that intelligently adapts to different screen sizes.
 
 * **Mobile View**: All components are stacked vertically in a single, clean column. The design prioritizes readability and easy navigation on smaller screens.
-![Mobile View: (<img width="312" height="644" alt="Image" src="https://github.com/user-attachments/assets/6507cb0b-b69e-488f-b108-9eb8a597097a" />) (<img width="309" height="638" alt="Image" src="https://github.com/user-attachments/assets/05cd1686-012e-4bdf-8763-8299e42a3294" />) (<img width="312" height="642" alt="Image" src="https://github.com/user-attachments/assets/886d9c02-b659-4909-b47b-a7336890c44f" />) (<img width="307" height="634" alt="Image" src="https://github.com/user-attachments/assets/2e8b824b-200f-415b-9704-f82b7cfb4fdf" />)]
+![Mobile View: <img width="312" height="644" alt="Image" src="https://github.com/user-attachments/assets/6507cb0b-b69e-488f-b108-9eb8a597097a" /> <img width="309" height="638" alt="Image" src="https://github.com/user-attachments/assets/05cd1686-012e-4bdf-8763-8299e42a3294" /> <img width="312" height="642" alt="Image" src="https://github.com/user-attachments/assets/886d9c02-b659-4909-b47b-a7336890c44f" /> <img width="307" height="634" alt="Image" src="https://github.com/user-attachments/assets/2e8b824b-200f-415b-9704-f82b7cfb4fdf" />]
 
 * **Laptop View**: The layout switches to a two-column grid. The "Create New Invoice" is grouped in the left column, while the financial metrics and the "Time Period" selectors are organized in the right column. This layout optimizes space and provides a high-level overview at a glance.
-![Laptop View: (<img width="1892" height="808" alt="Image" src="https://github.com/user-attachments/assets/34ec5373-527a-4038-a2fb-5232459e30c2" />)]
+![Laptop View: <img width="1892" height="808" alt="Image" src="https://github.com/user-attachments/assets/34ec5373-527a-4038-a2fb-5232459e30c2" />]
 
 -----
 

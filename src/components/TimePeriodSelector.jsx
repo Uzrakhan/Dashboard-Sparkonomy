@@ -1,7 +1,7 @@
 import { Crown } from 'lucide-react';
 import React, { useState } from 'react';
 import DatePicker from 'react-datepicker';
-import 'react-datepicker/dist/react-datepicker.css'; // This line is crucial for styling
+import 'react-datepicker/dist/react-datepicker.css'; 
 
 const TimePeriodSelector = () => {
   const [activePeriod, setActivePeriod] = useState('3Months');
@@ -26,10 +26,8 @@ const TimePeriodSelector = () => {
   const getButtonClass = (value) => {
     const baseClasses = "px-2 py-1 mt-1 rounded-full text-xs font-medium transition-colors duration-200 flex items-start gap-1";
     if (activePeriod === value) {
-      // Styling for active button as seen in the screenshot
       return `${baseClasses} bg-[#fbf6fe] text-[#7749ee] border-2 border-[#f3e8ff]`;
     }
-    // Styling for inactive buttons as seen in the screenshot
     return `${baseClasses} border-2 border-[#f2f2f2] text-[#999999] bg-[#ffffff] hover:bg-gray-300`;
   };
 

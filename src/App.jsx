@@ -20,12 +20,12 @@ function App() {
       {/* Main content area with a two-column layout for laptops */}
       <div className="flex flex-col flex-grow  lg:grid lg:grid-cols-2 lg:gap-6 mt-6 lg:mt-10">
         {/* First Column (Left): Large Invoice Creator */}
-        <div className="lg:col-span-1 lg:px-4">
+        <div className="px-4 lg:col-span-1 lg:px-4 rounded-t-4xl">
           <InvoiceCreator />
         </div>
 
         {/* Second Column (Right): All other smaller cards stacked vertically */}
-        <div className="lg:col-span-1 flex flex-col space-y-4 mt-4 lg:mt-0 lg:px-4">
+        <div className="lg:col-span-1 flex flex-col space-y-4 px-4 mt-4 lg:mt-0 lg:px-4">
           <TimePeriodSelector />
           <TotalEarnings />
           <div className="flex space-x-4">
@@ -35,9 +35,9 @@ function App() {
         </div>
 
         {/* Chart and Invoices list, spanning the full width below the two columns */}
-        <div className="lg:col-span-2 flex flex-col space-y-4 mt-4 lg:px-4">
+        <div className="lg:col-span-2 flex flex-col space-y-4 mt-4 px-4 lg:px-4">
           <Chart />
-          <div className='bg-white rounded-2xl shadow-sm p-4'>
+          <div className='bg-white rounded-2xl shadow-sm p-2'>
             <h2 className='text-lg font-semibold text-[#999999] mb-4'>Your Invoices</h2>
             <div className="flex flex-col space-y-4">
               <InvoiceCard clientName="Uzra Khan" amount="₹1,25,000" date="2024-06-15" initialStatus="Update Status" />
